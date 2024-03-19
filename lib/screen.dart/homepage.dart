@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:newwhost/Api_function/Function.dart';
-import 'package:newwhost/screen.dart/flech_movies/leatestRelease.dart';
-import 'package:newwhost/screen.dart/slideScreen.dart';
+import 'package:newwhost/screen.dart/flech_Screens/PopularMovies.dart';
+import 'package:newwhost/screen.dart/flech_Screens/TopRatedMovies.dart';
+import 'package:newwhost/screen.dart/flech_Screens/leatestRelease.dart';
+import 'package:newwhost/screen.dart/flech_Screens/slideScreen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -126,7 +128,7 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'Latest Releases',
+                  'Top Rated Movies ',
                   style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 18,
@@ -138,7 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(
               height: 8,
             ),
-            LetestReleaseScreen(),
+            TopRatedMovies(),
             const SizedBox(
               height: 10,
             ),
@@ -146,7 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'Latest Releases',
+                  'Popular Movies',
                   style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 18,
@@ -158,7 +160,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(
               height: 8,
             ),
-            LetestReleaseScreen(),
+            PopularMovies(),
           ],
         ),
       ),

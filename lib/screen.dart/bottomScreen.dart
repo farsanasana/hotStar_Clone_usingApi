@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'package:newwhost/screen.dart/NewsAndHot.dart';
-import 'package:newwhost/screen.dart/SearchPage.dart';
+import 'package:newwhost/screen.dart/SearchScreen/SearchPage.dart';
 import 'package:newwhost/screen.dart/homepage.dart';
-
-import 'Myspace.dart';
+import 'package:newwhost/screen.dart/myspace_screen.dart';
+import 'package:newwhost/screen.dart/newsScreen.dart/newandhot_screen.dart';
+import 'package:newwhost/screen.dart/newsScreen.dart/tapbar_screen.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({Key? key}) : super(key: key);
@@ -18,10 +19,10 @@ class _BottomNavigationState extends State<BottomNavigation> {
 
   PageController pageController = PageController();
   final List<Widget> _pages = [
-    HomeScreen(),
-    const Search(),
-    const NewandHots(),
-    const MySpace()
+    const HomeScreen(),
+    const searchscreen(),
+    const MyTabbedScreen(),
+    const Myspace()
   ];
 
   @override

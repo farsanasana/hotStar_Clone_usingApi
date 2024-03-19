@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:newwhost/screen.dart/flech_movies/leatestRelease.dart';
+import 'package:newwhost/screen.dart/flech_Screens/leatestRelease.dart';
 import 'package:newwhost/screen.dart/homepage.dart';
 
 class ViewScreen extends StatefulWidget {

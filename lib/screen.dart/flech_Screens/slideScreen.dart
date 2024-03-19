@@ -18,13 +18,14 @@ class _SlideScreenState extends State<SlideScreen> {
   @override
   void initState() {
     super.initState();
-    fetchMovies();
+    fetchUpComing();
   }
 
-  Future<void> fetchMovies() async {
+  Future<void> fetchUpComing() async {
     try {
       final url =
-          'https://api.themoviedb.org/3/trending/movie/day?api_key=$apikey';
+          'https://api.themoviedb.org/3/movie/upcoming?api_key=$apikey&language=en-US&page=1';
+
       final uri = Uri.parse(url);
       final response = await http.get(uri);
       if (response.statusCode == 200) {
